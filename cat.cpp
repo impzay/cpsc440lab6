@@ -1,7 +1,7 @@
 #include "cat.h"
 
 cat::cat() {
-    speed = 1;
+    speed = 10;
     x = 100;
     y = 100;
     direction = 1;
@@ -14,12 +14,12 @@ cat::~cat() {
 }
 
 void cat::create_cat_bitmap(ALLEGRO_DISPLAY* display) {
-    cat_bmp = al_create_bitmap(64, 64); 
+    cat_bmp = al_create_bitmap(64, 64);
     if (!cat_bmp)
         return;
 
     al_set_target_bitmap(cat_bmp);
-    al_clear_to_color(al_map_rgb(0, 0, 0)); 
+    al_clear_to_color(al_map_rgb(0, 0, 0));
 
     int rect_x = 0;
     int rect_y = 25;
@@ -112,7 +112,7 @@ void cat::down() {
     speed = 1;
 }
 
-void cat::right() {     
+void cat::right() {
     direction = 2;
     speed = 1;
 }

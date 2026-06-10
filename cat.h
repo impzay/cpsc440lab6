@@ -2,7 +2,7 @@
 #include <allegro5/allegro_primitives.h>
 
 
-#define MAX_SPEED 3
+#define MAX_SPEED 5
 
 class cat
 {
@@ -32,4 +32,3 @@ private:
 
 
 };
-
